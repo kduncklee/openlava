@@ -84,12 +84,12 @@ usage (char *cmd)
 int
 main(int argc, char **argv)
 {
-    char *jobName;
+    char *jobName = 0;
     int  options;
-    char *user;
-    char *queue;
-    char *host;
-    char *projectName;
+    char *user = 0;
+    char *queue = 0;
+    char *host = 0;
+    char *projectName = 0;
     int  format = 0;
     struct jobInfoHead *jInfoH;
     struct jobInfoEnt *job;

@@ -55,17 +55,15 @@ usage(const char *cmd)
 int
 main(int argc, char **argv)
 {
-    int numQueues;
-    char **queueNames;
-    char **queues;
-    struct queueInfoEnt *queueInfo;
+    int numQueues = 0;
+    char **queueNames = 0;
+    char **queues = 0;
+    struct queueInfoEnt *queueInfo = 0;
     char lflag = FALSE;
-    int cc;
-    int defaultQ;
-    char *host;
-    char *user;
-
-    numQueues = 0;
+    int cc = 0;
+    int defaultQ = 0;
+    char *host = 0;
+    char *user = 0;
 
     if (lsb_init(argv[0]) < 0) {
         lsb_perror("lsb_init");
