@@ -56,14 +56,14 @@ int
 main(int argc, char **argv)
 {
     int numQueues = 0;
-    char **queueNames = 0;
-    char **queues = 0;
-    struct queueInfoEnt *queueInfo = 0;
+    char **queueNames = NULL;
+    char **queues = NULL;
+    struct queueInfoEnt *queueInfo = NULL;
     char lflag = FALSE;
     int cc = 0;
     int defaultQ = 0;
-    char *host = 0;
-    char *user = 0;
+    char *host = NULL;
+    char *user = NULL;
 
     if (lsb_init(argv[0]) < 0) {
         lsb_perror("lsb_init");
